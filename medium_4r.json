@@ -1,0 +1,26 @@
+{
+    "maze": "medium.png", 
+    
+    "robots": [
+        {
+            "name": "r1",
+            "start": [20, 4],
+            "goal": [9, 14]
+        },
+        {
+            "name": "r2",
+            "start": [20, 20],
+            "goal": [9, 9]
+        },
+        {
+            "name": "r3",
+            "start": [4, 20],
+            "goal": [14, 9]
+        },
+        {
+            "name": "r4",
+            "start": [4, 4],
+            "goal": [14, 14]
+        }
+    ]
+}
