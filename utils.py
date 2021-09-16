@@ -48,7 +48,7 @@ def read_config_multi(filename):
         return grid, robots
 
 
-def plot_planner(routes, robots, grid, type_obs, reached_goal=None, difficulty=None, num_randoms=None, num_seed=None):
+def plot_planner(routes, robots, grid, type_obs, given_choice, reached_goal=None, difficulty=None, num_randoms=None, num_seed=None):
     if reached_goal is None:
         reached_goal = []
     fig, ax = plt.subplots(figsize=(20, 20))
@@ -78,7 +78,7 @@ def plot_planner(routes, robots, grid, type_obs, reached_goal=None, difficulty=N
             x_coords, y_coords = get_route_coord(route)
             index = reached_goal.index(robot)
             ax.plot(y_coords, x_coords, colors[index], linewidth=len(colors) - index + 1)
-            if type_obs != '1':
+            if type_obs == '2' and given_choice == '0':
                 pylab.savefig('/home/emina/github/mstar_files/rezultati' + '/' + 'r' + str(len(robots)) + '/' + str(
                     difficulty) + '/' +
                               str(num_randoms) + '/' + str(num_seed) + '.png')
