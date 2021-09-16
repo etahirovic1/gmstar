@@ -28,7 +28,7 @@ def run_all():
     routes, reached_goal, time_of_mstar = planner.run()
 
     grid = reverse(grid)
-    plot_planner(routes, robots, grid, type_obs, reached_goal, difficulty, num_randoms, num_seed)
+    plot_planner(routes, robots, grid, type_obs, given_choice, reached_goal, difficulty, num_randoms, num_seed)
     return time_of_mstar
 
 
