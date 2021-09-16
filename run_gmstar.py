@@ -1,6 +1,6 @@
 from gmstar import GMstar
 from astar_multi import Astar
-from utils_my import *
+from utils import *
 
 
 def reverse(grid):
